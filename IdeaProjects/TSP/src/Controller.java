@@ -39,9 +39,10 @@ public class Controller implements CommandListener, BackgroundPainter {
                 if (node instanceof Target)
                     points.add(node.getLocation());
 
-            // TODO: call TSP algorithms here
-            // We will later replace this line by a proper algorithm call
-            List<Point> itinerary = points;
+
+            Algorithm algorithm = new Algorithm();
+            algorithm.setPoints(points);
+            List<Point> itinerary = algorithm.getItinerary();
 
             points = itinerary; // Make sure that the itinerary will be drawn
 
