@@ -27,7 +27,42 @@ public class Controller implements CommandListener, BackgroundPainter {
         jTopology.addCommand(COMMAND_COMPUTE_TSP);
         jTopology.addCommandListener(this);
         jTopology.addBackgroundPainter(this);
+        /*topology.addNode(58.0, 128.0);
+        topology.addNode(157.0, 51.0);
+        topology.addNode(224.0, 150.0);
+        topology.addNode(339.0, 68.0);
+        topology.addNode(460.0, 39.0);
+        topology.addNode(537.0, 150.0);
+        topology.addNode(568.0, 358.0);
+        topology.addNode(458.0, 306.0);
+        topology.addNode(222.0, 353.0);
+        topology.addNode(113.0, 289.0);
+        topology.addNode(437.0, 119.0);
+        topology.addNode(360.0, 280.0);
+        topology.addNode(128.0, 219.0);
+        topology.addNode(271.0, 81.0);
+        topology.addNode(504.0, 222.0);*/
 
+        topology.addNode(591.0, 229.0);
+        topology.addNode(548.0, 99.0);
+        topology.addNode(396.0, 255.0);
+        topology.addNode(531.0, 79.0);
+        topology.addNode(476.0, 263.0);
+        topology.addNode(322.0, 332.0);
+        topology.addNode(519.0, 10.0);
+        topology.addNode(234.0, 381.0);
+        topology.addNode(43.0, 72.0);
+        topology.addNode(271.0, 56.0);
+        topology.addNode(406.0, 152.0);
+        topology.addNode(574.0, 174.0);
+        topology.addNode(382.0, 245.0);
+        topology.addNode(161.0, 297.0);
+        topology.addNode(361.0, 362.0);
+        topology.addNode(104.0, 155.0);
+        topology.addNode(466.0, 44.0);
+        topology.addNode(342.0, 10.0);
+        topology.addNode(252.0, 35.0);
+        topology.addNode(321.0, 136.0);
         new JViewer(jTopology);
     }
 
@@ -69,4 +104,5 @@ public class Controller implements CommandListener, BackgroundPainter {
             topology.addNode(node);
         }
     }
+
 }
